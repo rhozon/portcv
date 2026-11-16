@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+<meta name="robots" content="noindex">
+<script>
+  var p = location.pathname.replace(/^\/portcv/, "");
+  p = p.replace(/^\/(pt\/)?case-studies\.html$/, "/$1portfolio/");
+  p = p.replace(/^\/(pt\/)?case-studies\//, "/$1portfolio/");
+  if (p === "" ) p = "/";
+  location.replace("https://rhozon.github.io" + p + location.search + location.hash);
+</script>
+</head>
+<body>
+<p>This site moved to <a href="https://rhozon.github.io/">rhozon.github.io</a>.</p>
+</body>
+</html>
